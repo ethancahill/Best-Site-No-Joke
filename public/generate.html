@@ -5,30 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Become Motivated By Laughter</title>
 </head>
 <body>
-    <header class="has-text-centered">
-        <h1>Dad Jokes & Motivation</h1>
+    <header class="has-text-centered nav-title">
+        <h1>Get Your Daily Dad Motivation!</h1>
         <nav>
-        <ul>
-            <li><button type="button">Log Out</button></li>
-            <li><button type="button">Go to Gallery</button></li>
+        <ul class="pure-g">
+            <li><button class="button1">Go to Gallery</button></li>
+            <li><button class="button1">Log Out</button></li>
         </ul>
     </nav>
     </header>
     
-    <section>
-        <p>This is where the Dad Joke will go.</p>
+    <section class="containers">
+        <section class="joke-container">
+            <p>This is where the Dad Joke will go.</p>
+            <button class="button2">Use Joke</button>
+        </section>
+
+        <section class="image-container">
+            <p>This is where the images will go.</p>
+            <button class="button2">Use Image</button>
+        </section>
     </section>
 
-    <section>
-        <p>This is where the images will go.</p>
-    </section>
-
-    <section>
+    <section class="final-container">
         <p>This is where they will go together</p>
+        <button class="button2">Save to Gallery</button>
     </section>
 </body>
+
+<footer></footer>
 </html>
