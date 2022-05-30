@@ -1,61 +1,84 @@
 body {
-    margin: 0;
-    padding: 0;
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.login {
-    width: 382px;
-    overflow: hidden;
-    margin: 20 0 0 450px;
-    padding: 80px;
-    background: goldenrod;
-    border-radius: 15px;
-}
-
-h2 {
-    text-align: center;
-    color:  black;
-    padding: 20px;
-}
-
-label {
-    color: black;
-    font-size: 20px;
-}
-
-#Uname {
-    width: 300px;
-    height: 30px;
-    border: none;
+.signup-box {
+    width: 350px;
+    height: 620px; 
+    margin: auto;
+    background-color: goldenrod;
     border-radius: 3px;
-    padding-left: 8px;
 }
 
-#Pass{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;     
-}  
+.login-box {
+    width: 350px;
+    height: 280px; 
+    margin: auto;
+    background-color: goldenrod;
+    border-radius: 3px;
+}
 
-#log{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 17px;  
-    padding-left: 7px;  
-    color: blue;  
-  
-  
-}  
-span{  
-    color: white;  
-    font-size: 17px;  
-}  
-a{  
-    float: right;  
-    background-color: grey;  
-}  
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+h4 {
+    text-align: center;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(88, 65, 65);
+    color: white;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.para-2 {
+    text-align: center;
+    color: rgb(88, 65, 65);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.para-2 a {
+    color: rgb(88, 65, 65);
+}
+
+
+
+
+
+
+
+
