@@ -8,7 +8,4 @@ const { User, Joke } = require('../../models');
 // GET jokes of user 
 
 
-// POST selected joke to joke table
-
-
-// POST selected image to joke table
+// POST selected joke / image / user info to joke table
