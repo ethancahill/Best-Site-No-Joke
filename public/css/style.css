@@ -64,6 +64,7 @@ button:hover {
 
 .containers {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -107,3 +108,8 @@ button:hover {
     text-align: center;
 }
 
+@media (max-width: 800) {
+    .containers {
+       flex-direction: column;
+    }
+}
