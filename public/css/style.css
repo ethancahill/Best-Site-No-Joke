@@ -47,6 +47,8 @@ header nav {
 
 button:hover {
     background-color: whitesmoke;
+    /* text-decoration: none;
+    cursor: pointer; */
 }
 
 .button2 {
