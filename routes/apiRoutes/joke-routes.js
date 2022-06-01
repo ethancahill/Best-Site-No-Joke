@@ -9,3 +9,7 @@ const { User, Joke } = require('../../models');
 
 
 // POST selected joke / image / user info to joke table
+
+
+
+module.exports = router;

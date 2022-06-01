@@ -4,9 +4,13 @@ const galleryRoutes = require('./generate');
 const generateRoutes = require('./gallery');
 const loginRoutes = require('./login')
 
-router.use('/gallery', galleryRoutes);
-router.use('/generate', generateRoutes);
-router.use('/login', loginRoutes)
+// index home page
+router.use('/', loginRoutes);
+// gallery page
+// router.use('/gallery', galleryRoutes);
+// generate page
+// router.use('/generate', generateRoutes);
+
 
 
 module.exports = router;
