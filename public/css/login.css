@@ -1,11 +1,11 @@
 body {
     background-color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .signup-box {
     width: 350px;
-    height: 620px; 
+    height: 350px; 
     margin: auto;
     background-color: goldenrod;
     border-radius: 3px;
