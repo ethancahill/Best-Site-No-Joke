@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding-bottom: 50px;
-    background-color: black;
+    background-color: rgb(88, 65, 65);
     font-family: Comic Sans MS, Comic Sans, cursive
 }
 
@@ -36,7 +36,7 @@ header nav {
     color: goldenrod;
     padding: 10px;
     font-style: italic;
-    background-color: black;
+    background-color: rgb(88, 65, 65);
     padding: 14px 40px;
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -53,13 +53,26 @@ button:hover {
     font-size: 15px;
     color: goldenrod;
     font-style: italic;
-    background-color: black;
+    background-color: rgb(88, 65, 65);
     padding: 10px 20px;
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     font-family: Comic Sans MS, Comic Sans, cursive;
     justify-content: center;
     margin: 10px;
+}
+
+.save {
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    font-style: italic;
+    background-color: goldenrod;
+    padding: 14px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    justify-content: center;
 }
 
 .containers {
