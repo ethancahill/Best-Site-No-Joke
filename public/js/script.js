@@ -10,7 +10,6 @@ var imgArray = [
  './images/cat.jpg',
  './images/chicken.jpg',
  './images/cow.jpg',
- './images/dark-souls.jpeg',
  './images/face.jpg',
  './images/face2.jpg',
  './images/fellowship.webp',
