@@ -3,6 +3,7 @@ var container = document.getElementById('background-image-div');
 var save = document.getElementById('save');
 var currentIndex = 0;
 
+
 var imgArray = [
  './images/ballons.jpeg',
  './images/beaker.jpg',
@@ -40,7 +41,6 @@ imageButton.addEventListener('click', function() {
         var imageEl = document.getElementById('background-image');
             imageEl.src = imgArray[currentIndex]
     }       
-    
 })
 
 save.addEventListener('click', function() {
