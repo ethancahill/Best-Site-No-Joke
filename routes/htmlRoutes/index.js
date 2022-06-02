@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-const galleryRoutes = require('./generate');
-const generateRoutes = require('./gallery');
+const galleryRoutes = require('./gallery');
+const generateRoutes = require('./generate');
 const loginRoutes = require('./login')
 
 router.use('/login', loginRoutes);
