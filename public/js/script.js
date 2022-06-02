@@ -1,6 +1,7 @@
 var imageButton = document.getElementById('imageButton');
 var container = document.getElementById('background-image-div')
 
+
 // var imgArray = [];
 
 // imgArray[0].src = './images/ballons.jpeg';
@@ -32,6 +33,8 @@ imgArray[0] = new Image();
 imgArray[0].src ='../../images/beaker.jpg';
 
 imageButton.addEventListener('click', function() {
+    document.getElementById('joke-id').textContent = dadJokes.random();
+    console.log(dadJokes.random());
     for(var i=0;i<imgArray.length;i++) {
         var img = new Image();
         var imageEl = document.getElementById('background-image-div');

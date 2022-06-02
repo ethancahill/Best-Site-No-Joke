@@ -7,6 +7,7 @@ const { User, Joke } = require('../../models');
 
 // GET jokes of user 
 
+
 // POST selected joke / image / user info to joke table
 
 module.exports = router
