@@ -42,7 +42,7 @@ imageButton.addEventListener('click', function() {
         var imageEl = document.getElementById('background-image');
             imageEl.src = imgArray[currentIndex]
     }       
-})
+});
 
 save.addEventListener('click', function() {
     var imageToSave = document.getElementById('background-image').src;
@@ -53,7 +53,7 @@ save.addEventListener('click', function() {
             image: imageToSave,
             dad_joke: JokeToSave
         })
-    })
-})
+    });
+});
 
 

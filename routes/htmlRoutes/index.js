@@ -1,14 +1,16 @@
 const router = require('express').Router();
+// const res = require('express/lib/response');
 
-const res = require('express/lib/response');
 const galleryRoutes = require('./gallery');
 const loginRoutes = require('./login');
+const generateRoutes = require('./generate');
 
 router.use('/', loginRoutes);
 router.use('/gallery', galleryRoutes);
+router.use('/generate', generateRoutes);
 
 
-router.use('/login', loginRoutes)
+// router.use('/login', loginRoutes)
 router.use('/signup', (req,res)=>res.render('signup'));
 
 

@@ -1,7 +1,11 @@
+const loginButton = document.getElementById('submit-login');
+const signUpButton = document.getElementById('submit-signup');
+
+
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
-    const username = document.querySelector('#login-un').value.trim();
+    const username = document.querySelector('#login-in').value.trim();
     const password = document.querySelector('#login-pw').value.trim();
   
     if (username && password) {
@@ -40,11 +44,8 @@ const loginFormHandler = async (event) => {
     }
   };
   
-  document
-    .querySelector('.login-box')
-    .addEventListener('submit', loginFormHandler);
+
+loginButton.addEventListener('submit', loginFormHandler);
   
-  document
-    .querySelector('.signup-box')
-    .addEventListener('submit', signupFormHandler);
+// signUpButton.addEventListener('click', signupFormHandler);
   

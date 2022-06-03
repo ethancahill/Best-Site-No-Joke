@@ -15,9 +15,6 @@ router.get('/dadjoke', (req, res) => {
 
 // POST selected joke / image / user info to joke table
 
-<<<<<<< HEAD
-module.exports = router;
-=======
 router.post("/", function(req, res){
     Joke.create({
         user_id: req.session.user_id,
@@ -25,8 +22,7 @@ router.post("/", function(req, res){
         dad_joke: req.body.dad_joke
     }).then((data) => {
         res.json(data)
-    })
-})
+    });
+});
 
-module.exports = router
->>>>>>> d788746d686252b0082a67c2715214224ee975b9
+module.exports = router;
