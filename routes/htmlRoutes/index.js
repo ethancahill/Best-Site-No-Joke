@@ -1,11 +1,10 @@
 const router = require('express').Router();
-// const res = require('express/lib/response');
 
 const galleryRoutes = require('./gallery');
 const loginRoutes = require('./login');
 const generateRoutes = require('./generate');
 
-router.use('/', loginRoutes);
+router.use('/login', loginRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/generate', generateRoutes);
 
