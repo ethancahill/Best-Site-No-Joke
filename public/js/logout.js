@@ -1,3 +1,7 @@
+const logoutBtn = document.querySelector("#logout");
+const logoutBtn2 = document.querySelector("#logout2");
+
+
 const logout = async () => {
   const response = await fetch("/api/users/logout", {
     method: "POST",
@@ -11,5 +15,11 @@ const logout = async () => {
   }
 };
 
-document.querySelector("#logout").addEventListener("click", logout);
-document.querySelector("#logout2").addEventListener("click", logout);
+
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", logout);
+};
+
+if (logoutBtn2) {
+  logoutBtn2.addEventListener("click", logout);
+};

@@ -1,6 +1,5 @@
 var imageButton = document.getElementById('imageButton');
 var container = document.getElementById('background-image-div');
-var save = document.getElementById('save');
 var currentIndex = 0;
 
 
@@ -43,17 +42,3 @@ imageButton.addEventListener('click', function() {
             imageEl.src = imgArray[currentIndex]
     }       
 });
-
-save.addEventListener('click', function() {
-    var imageToSave = document.getElementById('background-image').src;
-    var JokeToSave = document.getElementById('joke').textContent;
-    fetch("/api/jokes", {
-        method: "POST",
-        body: JSON.stringify({ 
-            image: imageToSave,
-            dad_joke: JokeToSave
-        })
-    });
-});
-
-
