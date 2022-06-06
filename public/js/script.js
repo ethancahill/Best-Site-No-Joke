@@ -2,6 +2,7 @@ var imageButton = document.getElementById('imageButton');
 var container = document.getElementById('background-image-div');
 var save = document.getElementById('save');
 var currentIndex = 0;
+var jokeBtn = document.getElementById('jokeBtn');
 
 
 var imgArray = [
@@ -45,13 +46,22 @@ imageButton.addEventListener('click', function() {
 
 save.addEventListener('click', function() {
     var imageToSave = document.getElementById('background-image').src;
-    var JokeToSave = document.getElementById('joke').textContent;
+    var JokeToSave = document.getElementById('dadJoke').textContent;
     fetch("/api/jokes", {
         method: "POST",
         body: JSON.stringify({ 
             image: imageToSave,
             dad_joke: JokeToSave
         })
+    })
+})
+
+jokeBtn.addEventListener('click', function() {
+    fetch("/generate/dadjoke")
+    .then(response => response.json())
+    .then(data => {
+        var dadJoke = document.getElementById("dadJoke");
+        dadJoke.textContent = data.joke;
     })
 })
 

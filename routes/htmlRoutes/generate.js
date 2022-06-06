@@ -6,4 +6,10 @@ router.get('/dadjoke', (req, res) => {
     res.json( { joke: dadJoke.random()})
 })
 
+router.get('/', (req,res) => {
+    res.render("generate", {
+        generateCSS: true
+    })
+})
+
 module.exports = router;
