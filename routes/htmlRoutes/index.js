@@ -10,7 +10,8 @@ router.use('/gallery', galleryRoutes);
 router.use('/generate', generateRoutes);
 
 router.use('/login', loginRoutes)
-router.use('/signup', (req,res)=>res.render('signup'));
+router.use('/signup', (req, res) => res.render('signup'));
+
 
 
 module.exports = router;
