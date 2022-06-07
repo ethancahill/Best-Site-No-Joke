@@ -1,6 +1,7 @@
 var imageButton = document.getElementById('imageButton');
 var container = document.getElementById('background-image-div');
 var currentIndex = 0;
+var jokeBtn = document.getElementById('jokeBtn');
 
 
 var imgArray = [
@@ -10,7 +11,6 @@ var imgArray = [
  './images/cat.jpg',
  './images/chicken.jpg',
  './images/cow.jpg',
- './images/dark-souls.jpeg',
  './images/face.jpg',
  './images/face2.jpg',
  './images/fellowship.webp',
@@ -34,11 +34,34 @@ imageButton.addEventListener('click', function() {
         // var img = new Image();
     if(currentIndex < imgArray.length) {
         currentIndex++;
-        var imageEl = document.getElementById('background-image');
+            imageEl = document.getElementById('background-image');
             imageEl.src = imgArray[currentIndex]     
     } else {
         currentIndex = 0;
         var imageEl = document.getElementById('background-image');
             imageEl.src = imgArray[currentIndex]
     }       
-});
+})
+
+save.addEventListener('click', function() {
+    var imageToSave = imgArray[currentIndex];
+    var JokeToSave = document.getElementById('dadJoke').textContent;
+    fetch("/api/jokes", {
+        method: "POST",
+        body: JSON.stringify({ 
+            image: imageToSave,
+            dad_joke: JokeToSave
+        })
+    })
+})
+
+jokeBtn.addEventListener('click', function() {
+    fetch("/generate/dadjoke")
+    .then(response => response.json())
+    .then(data => {
+        var dadJoke = document.getElementById("dadJoke");
+        dadJoke.textContent = data.joke;
+    })
+})
+
+
