@@ -6,8 +6,8 @@ const saveButton = document.getElementById('save');
 async function saveFormHandler(event) {
     event.preventDefault();
     console.log('clicked');
-    var image = document.getElementById('background-image').src;
-    var dad_joke = document.getElementById('joke-id').textContent;
+    var image = imgArray[currentIndex].toString();
+    var dad_joke = document.getElementById('dadJoke').textContent;
 
 
     const response = await fetch('/api/jokes', {

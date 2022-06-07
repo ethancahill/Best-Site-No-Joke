@@ -4,7 +4,7 @@ var currentIndex = 0;
 var jokeBtn = document.getElementById('jokeBtn');
 
 
-var imgArray = [
+const imgArray = [
     './images/ballons.jpeg',
     './images/beaker.jpg',
     './images/bridge.jpg',
