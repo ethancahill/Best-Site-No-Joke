@@ -35,7 +35,7 @@ imageButton.addEventListener('click', function() {
         // var img = new Image();
     if(currentIndex < imgArray.length) {
         currentIndex++;
-        var imageEl = document.getElementById('background-image');
+            imageEl = document.getElementById('background-image');
             imageEl.src = imgArray[currentIndex]     
     } else {
         currentIndex = 0;
@@ -45,7 +45,7 @@ imageButton.addEventListener('click', function() {
 })
 
 save.addEventListener('click', function() {
-    var imageToSave = document.getElementById('background-image').src;
+    var imageToSave = imgArray[currentIndex];
     var JokeToSave = document.getElementById('dadJoke').textContent;
     fetch("/api/jokes", {
         method: "POST",
