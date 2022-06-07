@@ -4,6 +4,7 @@ const galleryRoutes = require('./gallery');
 const loginRoutes = require('./login');
 const generateRoutes = require('./generate');
 
+
 router.use('/gallery', galleryRoutes);
 router.use('/generate', generateRoutes);
 

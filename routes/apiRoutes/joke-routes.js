@@ -35,7 +35,6 @@ router.post('/', (req, res) => {
             image: req.body.image,
             dad_joke: req.body.dad_joke,
             user_id: req.session.user_id,
-            username: req.session.username
         })
         .then((dbPostData) => res.json(dbPostData))
         .catch(err => {
