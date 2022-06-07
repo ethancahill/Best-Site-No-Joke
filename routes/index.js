@@ -7,7 +7,7 @@ router.use('/', htmlRoutes);
 router.use('/api', apiRoutes);
 
 router.use('*', (req, res) => {
-    res.redirect("/login");
+    res.redirect("/generate");
   });
 
 router.use((req, res) => {
