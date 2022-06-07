@@ -1,10 +1,11 @@
 const router = require('express').Router();
 const path = require('path');
+const dadJoke = require('@mikemcbride/dad-jokes')
 
-router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../public/generate.html'));
-});
 
+router.get('/dadjoke', (req, res) => {
+    res.json( { joke: dadJoke.random()})
+})
 router.get('/', (req,res) => {
     if (req.session.loggedIn) {
     res.render("generate", {

@@ -1,5 +1,4 @@
 const logoutBtn = document.querySelector("#logout");
-const logoutBtn2 = document.querySelector("#logout2");
 
 
 const logout = async () => {
@@ -15,4 +14,6 @@ const logout = async () => {
   }
 };
 
-document.querySelector("#logout").addEventListener("click", logout);
+document
+.querySelector("#logout")
+.addEventListener("click", logout);
