@@ -123,9 +123,9 @@ button:hover {
     text-align: center;
 }
 
-#background-image-div, #joke-id {
+#background-image-div, #joke-div {
     width: 300px;
-    height: 200px;
+    height: 250px;
 }
 
 .instructions {
@@ -134,6 +134,10 @@ button:hover {
     font-size: large;
     padding: 10px 20px;
 
+}
+
+.save-container {
+    text-align: center;
 }
 
 @media (max-width: 800) {

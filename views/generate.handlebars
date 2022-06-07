@@ -8,12 +8,14 @@
     </nav>
 </header>
 
-<p class="instructions">Directions: Scroll through the dad jokes and images below. When you find a pair you like, save the combination to the gallery.</p>
+<p class="instructions">Directions: Scroll through the dad jokes and images below. When you find a pair you like, save the combination to the gallery. You will find all of your hilarious creations there!</p>
 
 <section class="containers">
 
     <section class="joke-container" id="joke-id">
-        <p id="dadJoke"></p>
+        <div id="joke-div">
+            <p id="dadJoke"></p>
+        </div>
         <button class="button2" id="jokeBtn">Refresh</button>
     </section>
 
@@ -26,7 +28,7 @@
     </section>
 </section>
 
-<section>
+<section class="save-container">
     <button id="save">Save</button>
 </section>
 <script src="./js/script.js"></script>
