@@ -1,9 +1,5 @@
 const router = require('express').Router();
 const { User, Joke } = require('../../models');
-
-
-const router = require('express').Router();
-const { User, Joke } = require('../../models');
 const dadJoke = require('@mikemcbride/dad-jokes');
 
 
@@ -39,7 +35,6 @@ router.post('/', (req, res) => {
             image: req.body.image,
             dad_joke: req.body.dad_joke,
             user_id: req.session.user_id,
-            username: req.session.username
         })
         .then((dbPostData) => res.json(dbPostData))
         .catch(err => {
