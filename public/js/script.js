@@ -1,6 +1,5 @@
 var imageButton = document.getElementById('imageButton');
 var container = document.getElementById('background-image-div');
-var save = document.getElementById('save');
 var currentIndex = 0;
 var jokeBtn = document.getElementById('jokeBtn');
 

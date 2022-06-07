@@ -1,9 +1,8 @@
 const router = require('express').Router();
 
-const res = require('express/lib/response');
 const galleryRoutes = require('./gallery');
+const loginRoutes = require('./login');
 const generateRoutes = require('./generate');
-const loginRoutes = require('./login')
 
 
 router.use('/gallery', galleryRoutes);
