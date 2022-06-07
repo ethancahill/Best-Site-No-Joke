@@ -9,12 +9,12 @@ async function saveFormHandler(event) {
     var image = document.getElementById('background-image').src;
     var dad_joke = document.getElementById('joke-id').textContent;
 
+
     const response = await fetch('/api/jokes', {
         method: 'post',
         body: JSON.stringify({
-            user_id,
             dad_joke,
-            image
+            image,
         }),
         headers: { "Content-Type": "application/json" }
     });
