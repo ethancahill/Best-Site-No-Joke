@@ -48,7 +48,7 @@ form input {
     outline: none;
 }
 
-input[type="button"]{
+input[type="submit"]{
     width: 320px;
     height: 35px;
     margin-top: 20px;
