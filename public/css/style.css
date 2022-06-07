@@ -79,24 +79,24 @@ button:hover {
 
 .containers {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.joke-container {
+/* .joke-container {
     box-shadow: 5px 10px 18px;
     padding: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     margin: 40px;
     color: goldenrod;
     background-color: white;
-}
+} */
 
 .joke-container p {
     color: black;
 }
 
-.image-container {
+.image-container, .joke-container {
     box-shadow: 5px 10px 18px;
     padding: 30px;
     padding-bottom: 30px;
@@ -123,9 +123,17 @@ button:hover {
     text-align: center;
 }
 
-#background-image-div {
+#background-image-div, #joke-id {
     width: 300px;
     height: 200px;
+}
+
+.instructions {
+    text-align: center;
+    color: snow;
+    font-size: large;
+    padding: 10px 20px;
+
 }
 
 @media (max-width: 800) {
