@@ -7,9 +7,14 @@ router.get('/dadjoke', (req, res) => {
 })
 
 router.get('/', (req,res) => {
+    if (req.session.loggedIn) {
     res.render("generate", {
         generateCSS: true
     })
+} else {
+    res.redirect('/login')
+}
+
 })
 
 module.exports = router;
