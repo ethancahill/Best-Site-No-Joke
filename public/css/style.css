@@ -2,10 +2,10 @@
 body {
     margin: auto;
     width: auto;
-    height: 2000px;
+    height: auto;
     padding-bottom: 50px;
     background-color: rgb(88, 65, 65);
-    font-family: Comic Sans MS, Comic Sans, cursive
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 header h1 {
@@ -154,7 +154,6 @@ button:hover {
     height: auto;
     width: 45%;
     text-align: center;
-
 }
 
 #gallery-wall p {
