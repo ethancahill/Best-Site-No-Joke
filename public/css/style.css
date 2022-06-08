@@ -128,6 +128,23 @@ button:hover {
     height: 200px;
 }
 
+.joke-box {
+    border: 4px;
+    border-color: goldenrod;
+    border-style: solid;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+
+#gallery-wall p {
+    color: goldenrod;
+    font-size: 150%;
+}
+
 @media (max-width: 800) {
     .containers {
        flex-direction: column;
