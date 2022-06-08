@@ -3,7 +3,7 @@ const { User, Joke } = require('../../models');
 const dadJoke = require('@mikemcbride/dad-jokes');
 
 
-// GET jokes of user
+// GET jokes of user that is logged in
 router.get('/', (req, res) => {
     console.log('Getting Jokes===========================')
     Joke.findAll({
@@ -15,7 +15,10 @@ router.get('/', (req, res) => {
                 model: User,
                 attributes: ['username']
             }
-        ]
+        ],
+        where: {
+            user_id: req.session.user_id
+        }
     })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
