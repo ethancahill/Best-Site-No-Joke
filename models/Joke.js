@@ -6,10 +6,9 @@ class Joke extends Model {}
 Joke.init(
   {
     id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
+      type: Sequelize.UUID,
+      defaultValue: Sequelize.UUIDV4,
       primaryKey: true,
-      isUUID: 4,
     },
     user_id: {
       type: DataTypes.INTEGER,

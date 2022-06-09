@@ -15,16 +15,9 @@ User.init(
   {
     // define an id column
     id: {
-      // use the special Squelize DataTypes object provide what type of data it is
-      type: DataTypes.INTEGER,
-      // this is the equivalent of SQL's 'NOT NULL' option
-      allowNull: false,
-      // instruct that this is the Primary Key
+      type: Sequelize.UUID,
+      defaultValue: Sequelize.UUIDV4,
       primaryKey: true,
-      // universal id
-      isUUID: 4,
-     
-    
     },
     // define a username column
     username: {
