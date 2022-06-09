@@ -23,11 +23,15 @@ User.init(
       primaryKey: true,
       // turn on auto increment
       autoIncrement: true,
+      // can't create two users with the same name
+    
     },
     // define a username column
     username: {
       type: DataTypes.STRING,
       allowNull: false,
+      // can't create two users with the same name
+      unique: true,
     },
     // define a password column
     password: {
