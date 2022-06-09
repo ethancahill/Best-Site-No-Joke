@@ -29,6 +29,7 @@ Joke.init(
     dad_joke: {
       type: DataTypes.STRING,
       allowNull: false,
+      notEmpty: true
     },
   },
   {
