@@ -11,7 +11,7 @@ Joke.init(
       primaryKey: true,
     },
     user_id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.UUIDV4,
       references: {
         model: 'user',
         key: 'id'
