@@ -161,6 +161,13 @@ button:hover {
     font-size: 150%;
 }
 
+#gallery-wall {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
 @media (max-width: 800) {
     .containers {

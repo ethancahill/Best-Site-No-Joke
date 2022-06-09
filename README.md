@@ -4,6 +4,9 @@
 
 Allow yourself to be motivated by laughter! This website provides an opportunity to sort through the quirkiest of "dad jokes", as well as a variety of inspirational background photos. When a user comes upon a joke and background photo of their liking, they are able to save the pairing into a gallery for future viewing. 
 
+![LoginPage](https://user-images.githubusercontent.com/98136587/172494287-10d8afa8-5eec-4518-a9f9-2c68fac05e2a.png)
+![GeneratePage](https://user-images.githubusercontent.com/98136587/172494208-c2ed2f8f-487c-4506-8a7f-7512bb80b1ed.png)
+
 ## Table of Contents
 
 - [Installation](#installation)
