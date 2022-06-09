@@ -15,16 +15,23 @@ User.init(
   {
     // define an id column
     id: {
-      type: Sequelize.UUID,
-      defaultValue: Sequelize.UUIDV4,
+      // use the special Squelize DataTypes object provide what type of data it is
+      type: DataTypes.INTEGER,
+      // this is the equivalent of SQL's 'NOT NULL' option
+      allowNull: false,
+      // instruct that this is the Primary Key
       primaryKey: true,
+      // turn on auto increment
+      autoIncrement: true,
+  
+    
     },
     // define a username column
     username: {
       type: DataTypes.STRING,
       allowNull: false,
       // can't create two users with the same name
-      unique: true,
+      unique: true
     },
     // define a password column
     password: {
