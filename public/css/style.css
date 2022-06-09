@@ -1,9 +1,11 @@
 
 body {
-    margin: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
     padding-bottom: 50px;
     background-color: rgb(88, 65, 65);
-    font-family: Comic Sans MS, Comic Sans, cursive
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 header h1 {
@@ -141,21 +143,31 @@ button:hover {
 }
 
 .joke-box {
-    border: 4px;
+    border: 2px;
     border-color: goldenrod;
     border-style: solid;
-    padding: 5px;
+    padding: 3px;
     margin-top: 10px;
     margin-bottom: 15px;
     margin-left: 4px;
     margin-right: 4px;
-
+    height: auto;
+    width: 45%;
+    text-align: center;
 }
 
 #gallery-wall p {
     color: goldenrod;
     font-size: 150%;
 }
+
+#gallery-wall {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
 @media (max-width: 800) {
     .containers {
