@@ -9,7 +9,7 @@ Joke.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      isUUID: 4,
     },
     user_id: {
       type: DataTypes.INTEGER,

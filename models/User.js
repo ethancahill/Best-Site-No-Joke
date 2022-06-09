@@ -21,9 +21,9 @@ User.init(
       allowNull: false,
       // instruct that this is the Primary Key
       primaryKey: true,
-      // turn on auto increment
-      autoIncrement: true,
-      // can't create two users with the same name
+      // universal id
+      isUUID: 4,
+     
     
     },
     // define a username column
