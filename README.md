@@ -11,8 +11,10 @@ Allow yourself to be motivated by laughter! This website provides an opportunity
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributors](#contributors)
 - [Credits](#credits)
 - [License](#license)
+
 
 ## Installation
 
@@ -23,6 +25,11 @@ This website requires no installation. Use the link below to access the site.
 
 This website can be used for motivation, a Father's Day gift, or just as an opportunity for a laugh. Let us know if you have any jokes to add to the bunch!
 
+## Contributors
+Madeline Stoddard [GitHub](https://github.com/MadStoddard)      
+Nicole Sharrock-Hayes [GitHub](https://github.com/NicoleSharrock)   
+Ethan Cahill [GitHub](https://github.com/ethancahill)   
+Skylar Jackson [GitHub](https://github.com/Doctor-Worm)
 
 ## Credits
 
