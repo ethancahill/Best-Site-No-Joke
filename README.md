@@ -8,6 +8,7 @@ Allow yourself to be motivated by laughter! This website provides an opportunity
 ![GeneratePage](https://user-images.githubusercontent.com/98136587/172494208-c2ed2f8f-487c-4506-8a7f-7512bb80b1ed.png)
 
 ##Deployed Site
+
 https://secret-reef-53642.herokuapp.com
 
 ## Table of Contents
